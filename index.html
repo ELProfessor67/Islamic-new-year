@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Font Family -->
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text&display=swap" rel="stylesheet">
+     <!-- font awesome-->
+ <script src="https://kit.fontawesome.com/a6b909bec9.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Islamic New Year</title>
+</head>
+<style type="text/css" media="all">
+          /*font family*/
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akronim&display=swap');
+
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+    background: #17223b;
+  }
+  
+  .container{
+    width: 100vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+ 
+  h1{
+    text-align: center;
+    background-image: linear-gradient(to left ,#5bd1d7,transparent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+    -webkit-text-stroke: thin red;
+    text-shadow: 3px 3px 30px #ff000088;
+    animation: zee 5s ease-in-out infinite .5s;
+  /*animation: zee2 4s infinite;*/
+    font-family: 'STIX Two Text', serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  @keyframes zee{
+    0%{transform: rotate(0deg);}
+    
+    25%{transform: rotate(30deg);
+        letter-spacing: 10px;
+    }
+    
+   50%{
+      transform: rotate(-30deg);
+      letter-spacing: 2px;
+    }
+    
+    75%{
+      transform: rotate(-30deg);
+      letter-spacing: 10px;
+    }
+    
+    100%{transform: rotate(30deg);
+      letter-spacing: 2px;
+    }
+  }
+  
+   span{
+    color: red;
+    display: block;
+    text-align: center;
+    margin: 5px;
+    background-image: linear-gradient(to left, #5bd1d7,transparent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1rem;
+  }
+  
+  #time{
+    margin-top: 30px;
+  }
+  
+  a{
+    text-align: center;
+    display: block;
+    width: 120px;
+    padding: 10px 15px;
+    border: 1px solid #5bd1d7;
+    border-radius: 5px;
+    margin: auto;
+    cursor: pointer;
+    position: relative;
+    top: 10px;
+    background: linear-gradient(to right ,#5bd1d7,transparent);
+    font-size: 1rem;
+    color: #5bd1d7;
+    text-shadow: 0 0 10px #17223b;
+    box-shadow: 0 10px 35px #5bd1d7;
+    transition: all .4s;
+    animation: zees 2s ease-in-out
+infinite;
+    transform: translateX(30px);
+  }
+  
+   a:hover{
+    box-shadow: 0 0px 25px #5bd1d7;
+    top: 5px;
+  }
+  
+  @keyframes zees{
+    0%{transform: translateX(0px)};
+    50%{transform: translateX(15px)};
+    100%{transform: translateX(-15px)};
+  }
+  
+  .box{
+    display: none;  
+    flex-direction: column;
+  }
+  
+  nav{
+      width: 100%;
+      display: flex;
+      background: -webkit-linear-gradient(left, #5bd1d7, #17223b);
+      background: -moz-linear-gradient(left, #5bd1d7, #17223b);
+      background: -o-linear-gradient(left, #5bd1d7, #17223b 50%);
+      background: linear-gradient(to bottom, #5bd1d7, #17223b);
+    /*  background: #3b626f;*/
+      align-items: center;
+      justify-content: flex-end;
+    }
+  
+  nav i:nth-child(1){
+    color:#17223b;
+    font-size: 30px;
+    margin: 10px auto 10px 10px;
+  }
+  
+  nav i:nth-child(2){
+    color: #17223b;
+    font-size: 30px;
+    margin: 10px 10px 10px 10px;
+  }
+  
+ /* .home{
+    width: 100%;
+    height: 600px;
+    border: 1px solid red;
+    background-image:linear-gradient(10deg,#3b626f 20%, transparent 80%), url('img.jpeg');
+    background-size: 100% 100%;
+  }*/
+  
+  .content{
+    width: 100%;
+    height: 120vh;
+    background-image: linear-gradient(195deg,#17223b , #5bd1d7);
+  }
+  
+  .para1{
+    text-align: center;
+    background-image: linear-gradient(to left ,#5bd1d7 10%,transparent);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 17px;
+    padding: 15px 10px 0 10px;
+    font-family: 'Merienda', cursive;
+  }
+  
+  .naat{
+    font-size: 25px;
+    color: #17223b;
+    display: inline-block;
+    font-family: 'Merienda', cursive;
+    font-weight: 50;
+    margin-left: 5px;
+  }
+ </style>
+   <!--responsibe width:800px-->
+ <style type="text/css" media="(min-width:800px)">
+
+    h1 {
+      font-size: 6.5rem;
+    }
+
+@keyframes zee{
+      0% {
+        transform: rotate(0deg);
+      }
+
+      25% {
+        transform: rotate(30deg);
+        letter-spacing: 20px;
+      }
+
+      50% {
+        transform: rotate(-30deg);
+        letter-spacing: 5px;
+      }
+
+      75% {
+        transform: rotate(-30deg);
+        letter-spacing: 20px;
+      }
+
+      100% {
+        transform: rotate(30deg);
+        letter-spacing: 5px;
+      }
+    }
+    
+    span{
+      font-size: 2.6rem;
+      margin: 10px;
+    }
+    
+    #time{
+      margin-top: 65px;
+    }
+    
+   a{
+      width: 300px;
+      padding: 25px;
+      font-size: 2.5rem;
+      box-shadow: 0 30px 75px #5bd1d7;
+     }
+     
+  nav i:nth-child(1){
+    color:#17223b;
+    font-size: 70px;
+    margin: 20px auto 20px 15px;
+  }
+  
+  nav i:nth-child(2){
+    color: #17223b;
+    font-size: 60px;
+    margin: 20px 15px 20px 15px;
+  }
+  
+  .naat{
+    font-size: 3.5rem;
+    margin-left: 17px;
+  }
+  
+  .para1{
+    font-size: 3rem;
+    padding: 20px 15px 0 15px;
+  }
+</style>
+<body>
+  
+  <div class="container">
+  <h1>Happy</h1>
+  <h1>Islamic</h1>
+  <h1>new year</h1>
+  <h1>dear</h1>
+  <h1></h1>
+  <span id="time"></span>
+  <span id="date"></span>
+  </div>
+  <a>Click me</a>
+
+  <div class="box">
+  <nav>
+   <i class="fas fa-mosque">
+   <p class="naat">Naat</p></i>
+   <i class="fas fa-bars"></i>
+  </nav>
+  <!--<div class="home">
+    
+  </div>-->
+  <div class="content">
+    <p class="para1">
+Assalam ya Hussain Assalam ya Hussain
+Mere Hussain Tujhe Salam, Assalam Ya Hussain
+Kar liya Nosh Jis Ne Shahadat Ka Jaam
+Us Hussain Ibne Haider Pe Lakhon Salam
+Mere Hussain Tujhe Salaam.
+    </p>
+
+   <p class="para1">
+Jisne Haqq Karbala Me Adaa Kar Diya
+Apne Nana Ka Wada Wafa Kar Diya
+Sab Kuch Ummat Ki Khaatir Fida Kar Diya
+Ghar Ka Ghar Sab Supurd e Khuda Kardiya
+Us Hussain Ibne Haider Pe Lakho Salaam.
+  </p>
+  
+  <p class="para1">
+Jiska Jannat Se Joda Mangaya Gaya
+Jisko Doshe Nabi Par Bithaya Gaya
+Jiske Bhai Ko Zeher Pilaya Gaya
+Jis Ko Teero Se Chalni Karaya Gaya
+Us Hussain Ibne Haider Pe Lakhon Salam.
+  </p>
+  <p class="para1">
+Jisko Ko Dhoke Se Kufe Bulaya Gaya
+Jisko Ko Baithe Bithaye Sataya Gaya
+Jisko Ke Bachcho Ko Pyasa Rulaya Gaya
+Jisko Ki Garden Pe Khanjar Chalaya Gaya
+Us Hussain Ibne Haider Pe Lakho Salaam.
+  </p>
+  
+  <p class="para1">
+Kar Chuka Woh Abhi Apni Hujjat Tamam
+Le Ke Allah Aur Apne Nana Ka Naam
+Kufiyon Ko Sunaye Khuda Ke Kalaam
+Aur Fida Hogaya ,Shah e Aali Makaam
+Us Hussain Ibne Haider Pe Lakhon Salam
+  </p>
+  </div>
+  </div>
+       <!--my javascript-->
+ <script>
+           // Input
+ const name = prompt("ENTER YOUR FIRST NAME",)||"MUSLIMS";
+ 
+ document.querySelector("h1:nth-child(5)").innerHTML= name;
+
+            //Time 
+ setInterval(()=>{
+   let d = new Date();
+   let hours = d.getHours();
+   let Min = d.getMinutes();
+   let sec = d.getSeconds();
+         //make am pm
+   let midday = (hours >= 12) ? "PM" : "AM";
+ /*
+   if (hours >= 12){
+     midday = "Am";
+   
+   else {
+     madday = "PM";
+   }
+   */
+      //add 0 in single number
+   if(hours < 10){
+     hours = "0" + hours;
+   }
+   
+   if(Min < 10){
+     Min = "0" + Min;
+   }
+   
+   if(sec <10){
+     sec = "0" + sec;
+   }
+        //24 hours to 12 hours
+   hours = (hours == 0) ? 12 :  hours = (hours == 0) ? 12 : ((hours > 12) ?(hours - 12) : hours )
+  
+  /*
+    if (hours == 0){
+      hours = 12;
+    }
+    
+    else if(hours > 12){
+      hours = (hours - 12);
+    }
+    
+    else{
+      hours = hours;
+    }
+  */
+  let t = document.querySelector('#time');
+  t.innerHTML= hours + " : " + Min + " : " + sec + " : " + midday;
+  
+  },1000);
+  
+              //Date
+  let nd = new Date();
+  let year = nd.getFullYear();
+  let month = nd.getMonth();
+  let date = nd.getDate();
+  let day = nd.getDay();
+        //Day By name
+        
+   switch (day) {
+     case 0:
+       day = "Sunday";
+       break;
+     case 1:
+       day = "Monday";
+       break;
+     case 2:
+       day = "Tuesday";
+       break;
+     case 3:
+       day = "Wednesday";
+       break;
+     case 4:
+       day = "Thursday";
+       break;
+     case 5:
+       day = "Friday";
+       break;
+     case 6:
+       day = "Saturday";
+       break;
+   }
+
+      //month by name
+  switch (month){
+    case 0:
+      month = "Jan";
+      break;
+    case 1:
+      month = "Feb";
+      break;
+    case 2:
+      month = "Mar";
+      break;
+    case 3:
+      month = "Apr";
+      break;
+    case 4:
+      month = "May";
+      break;
+    case 5:
+      month = "Jun";
+      break;
+    case 6:
+      month = "Jul";
+      break;
+    case 7:
+      month = "Aug";
+      break;
+    case 8:
+      month = "Sep";
+      break;
+    case 9:
+      month = "Oct";
+      break;
+    case 10:
+      month = "Nov";
+      break;
+    case 11:
+      month = "Dec";
+      break;
+  } 
+  
+ let d = document.querySelector('#date');
+  
+  d.innerHTML= day + " , " + date + " " +  month + " , " + year;
+  
+           //next page
+const page1 = document.querySelector('.container');
+ 
+const btn = document.querySelector("a");
+
+const page2 = document.querySelector('.box');
+  
+  switchpage = () => {
+   page1.style.display="none";
+   
+   document.body.style.background="white";
+   btn.style.display='none';
+   
+   page2.style.display="block";
+  }
+  
+   btn.addEventListener("click",()=>{
+     switchpage()
+     audio.play()
+  });
+
+              //audio
+  let audio = new Audio();
+  audio.src ="audio.mp3";
+  </script>
+</body>
+</html>
